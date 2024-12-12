@@ -4,9 +4,10 @@ import ReactDOM from 'react-dom';
 const App = () => {
     return (
         <div>
-            <h2>blah blah</h2>
+            <h1>Hello, React!</h1>
+            <p>blah blah</p>
         </div>
     );
 };
 
-ReactDOM.render(<App />, document.getElementById('test1'));
+ReactDOM.render(<App />, document.getElementById('root'));
