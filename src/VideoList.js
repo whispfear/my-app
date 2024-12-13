@@ -1,21 +1,20 @@
 import React from 'react';
-import Video from './Video'; // Ensure the path is correct based on your directory structure
 
-const VideoList = ({ videos, emptyHeading }) => {
-    const count = videos.length;
-    let heading = emptyHeading;
-    if (count > 0) {
-        const noun = count > 1 ? 'Videos' : 'Video';
-        heading = count + ' ' + noun;
-    }
-    return (
-        <section>
-            <h2>{heading}</h2>
-            {videos.map(video =>
-                <Video key={video.id} video={video} />
-            )}
-        </section>
-    );
+const VideoList = ({ videos }) => {
+  return (
+    <div>
+      {videos.map(video => (
+        <div key={video.id}>
+          <h3>{video.title}</h3>
+          <p>{video.description}</p>
+          <video width="320" height="240" controls>
+            <source src={process.env.PUBLIC_URL + video.url} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      ))}
+    </div>
+  );
 };
 
 export default VideoList;
