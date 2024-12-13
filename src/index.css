@@ -7,6 +7,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: black;
   color: #ddd;
+  margin: 20px;
+
 }
 
 code {
@@ -14,8 +16,39 @@ code {
     monospace;
 }
 
+img {
+  width: 300px; 
+  height: auto; 
+}
+
 .video-container {
   border: 1px solid #ddd;
   padding: 10px;
   margin: 10px 0;
+}
+
+table {
+  width: 50%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-family: Arial, sans-serif;
+}
+
+th, td {
+  border: 1px solid #f1f1f12d;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f1f1f12d;
+  color: #afaeae;
+}
+
+tr:nth-child(even) {
+  background-color: #f1f1f12d;
+}
+
+tr:hover {
+  background-color: #f1f1f163;
 }
