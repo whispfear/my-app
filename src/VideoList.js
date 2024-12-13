@@ -1,5 +1,5 @@
 import React from 'react';
-import Video from './Video';  // Ensure the path is correct based on your file structure
+import Video from './Video'; 
 
 const VideoList = ({ videos, emptyHeading }) => {
     const count = videos.length;
