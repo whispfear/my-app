@@ -49,8 +49,8 @@ createRoot(document.getElementById('test')).render(
 const containerVideo = document.getElementById('video');
 const video = createRoot(containerVideo);
 const videos = [
-  { id: 1, title: 'First Video', description: 'This is the first video.', url: '/Green_Screen_Sample.mp4' },
-  { id: 2, title: 'Second Video', description: 'This is the second video.', url: '/test_sample.mp4' }
+  { id: 1, title: 'First Video', description: 'This is the first video.', url: '/videos/Green_Screen_Sample.mp4' },
+  { id: 2, title: 'Second Video', description: 'This is the second video.', url: '/videos/test_sample.mp4' }
 ];
 video.render(<VideoList videos={videos} />);
 
