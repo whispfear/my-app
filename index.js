@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-const Index = () => (
+const App = () => (
     <div>
         <h1>Hello, React!</h1>
         <p>blah blah</p>
     </div>
 );
 
-ReactDOM.render(<Index />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));
 
-export default Index;
+export default App;
