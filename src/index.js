@@ -1,8 +1,7 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
+import './index.css';
 import logo from './logo.svg';
-import './App.css';
-import App from './App';
 import VideoList from './VideoList';
 import reportWebVitals from './reportWebVitals';
 
