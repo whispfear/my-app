@@ -3,7 +3,25 @@ import { createRoot } from 'react-dom/client';
 import './index.css';
 import logo from './logo.svg';
 import VideoList from './VideoList';
+import Header from './Header';
 import reportWebVitals from './reportWebVitals';
+
+import React from 'react';
+import { createRoot } from 'react-dom/client';
+import './index.css';
+import Header from './header';
+
+const containerHeader = document.getElementById('header');
+if (containerHeader) { // Check if the container exists
+  const header = createRoot(containerHeader);
+  header.render(
+    <React.StrictMode>
+      <Header />
+    </React.StrictMode>
+  );
+} else {
+  console.error('Element with ID "header" not found.');
+}
 
 createRoot(document.getElementById('root')).render(
   <section>
