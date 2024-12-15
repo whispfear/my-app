@@ -7,23 +7,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: black;
   color: #ddd;
-  margin: 20px;
-
-}
-
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; /* Full height of the viewport */
-}
-
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start; /* Align items to the top */
-  height: 100vh; /* Full height of the viewport */
-  padding-top: 20px; /* Adjust top padding as needed */
 }
 
 .header {
@@ -31,16 +14,19 @@ body {
   padding: 10px 20px;
   color: white;
   display: flex;
-  justify-content: space-between;
+  justify-content: center; /* Center text horizontally */
   align-items: center;
   width: 100%;
-  max-width: 1200px; /* Optional: Limit the maximum width */
+  position: fixed;
+  top: 0;
+  z-index: 1000;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
   gap: 15px;
+  margin-left: auto; /* Align nav-links to the right */
 }
 
 .nav-links li {
@@ -55,6 +41,13 @@ body {
 
 .nav-links a:hover {
   text-decoration: underline;
+}
+
+.main-content { 
+  padding-top: 60px; /* Adjust according to header height */
+  padding-bottom: 60px; /* Adjust according to footer height */
+  margin: 0 auto; 
+  max-width: 1200px; 
 }
 
 code {
@@ -97,4 +90,36 @@ tr:nth-child(even) {
 
 tr:hover {
   background-color: #f1f1f163;
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 1000; /* Ensures the footer stays on top of other content */
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.footer-links li {
+  display: inline;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
 }
