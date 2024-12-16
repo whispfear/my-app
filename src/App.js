@@ -7,9 +7,22 @@ import Footer from './Footer';
 
 const App = () => {
   const videos = [
-    { id: 1, title: 'First Video', description: 'This is the first video.', url: '/videos/Green_Screen_Sample.mp4' },
-    { id: 2, title: 'Second Video', description: 'This is the second video.', url: '/videos/test_sample.mp4' },
-    { id: 3, title: 'Third Video', description: 'This is the third video.', url: '/videos/test.mp4' }
+    { id: 1, 
+      title: 'First Video', 
+      description: 'This is the first video.', 
+      url: '/videos/Green_Screen_Sample.mp4' },
+    { id: 2, 
+      title: 'Second Video', 
+      description: 'This is the second video.', 
+      url: '/videos/test_sample.mp4' },
+    { id: 3, 
+      title: 'Third Video', 
+      description: 'This is the third video.', 
+      url: '/videos/test.mp4' },
+    { id: 4, 
+      title: 'Video from Youtube', 
+      description: 'Learn React JS - Full Beginners Tutorial (2024) & Practice Projects', 
+      url: 'https://www.youtube.com/watch?v=x4rFhThSX04' }
   ];
 
   return (
