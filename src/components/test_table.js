@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Test = () => {
+const TestTable = () => {
   return (
     <table>
     <thead>
@@ -31,4 +31,4 @@ const Test = () => {
   );
 };
 
-export default Test;
+export default TestTable;

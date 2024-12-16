@@ -1,9 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Header from './Header';
-import Home from './HomePage';
-import VideoList from './VideoList';
-import Footer from './Footer';
+import Header from './components/Header';
+import Home from './components/HomePage';
+import VideoList from './components/VideoList';
+import Footer from './components/Footer';
 
 const App = () => {
   const videos = [

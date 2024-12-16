@@ -1,5 +1,6 @@
 import React from 'react';
-import Test from './test';
+import TestTable from './test_table';
+import TestPage from './test_page';
 
 const Home = () => (
   <section>
@@ -9,7 +10,8 @@ const Home = () => (
       <li>せぽ俳部ヒケチ社郎表討賢コネナ専用ウオイ高飛士ふねちよ</li>
       <li>厚集もほきす読2抗設連びゅの増材</li>
     </ul>
-    <Test />
+    <TestTable />
+    <TestPage />
   </section>
 );
 
