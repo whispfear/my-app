@@ -14,7 +14,7 @@ body {
   padding: 10px 20px;
   color: white;
   display: flex;
-  justify-content: center; /* Center text horizontally */
+  justify-content: center; 
   align-items: center;
   width: 100%;
   position: fixed;
@@ -26,7 +26,7 @@ body {
   list-style: none;
   display: flex;
   gap: 15px;
-  margin-left: auto; /* Align nav-links to the right */
+  margin-left: auto; 
 }
 
 .nav-links li {
@@ -54,8 +54,8 @@ a:hover {
 }
 
 .main-content { 
-  padding-top: 60px; /* Adjust according to header height */
-  padding-bottom: 60px; /* Adjust according to footer height */
+  padding-top: 60px; 
+  padding-bottom: 60px; 
   margin: 0 auto; 
   max-width: 1200px; 
 }
@@ -106,11 +106,12 @@ tr:hover {
   background-color: #333;
   color: white;
   padding: 20px;
+  justify-content: center;
   text-align: center;
   position: fixed;
   bottom: 0;
   width: 100%;
-  z-index: 1000; /* Ensures the footer stays on top of other content */
+  z-index: 1000; 
 }
 
 .footer-links {
@@ -132,4 +133,72 @@ tr:hover {
 
 .footer-links a:hover {
   text-decoration: underline;
+}
+
+.test-header {
+  background: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.test-header > img {
+  padding-right: 20px;
+}
+
+.entries {
+  display: flex;
+  background-color: #1e1e1e; 
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.entries-img-container {
+  flex: 1;
+  max-width: 200px;
+}
+
+.entries-img-container img {
+  width: 100%; 
+  height: auto;
+  display: block;
+}
+
+.entries-main-container {
+  flex: 2;
+  padding: 20px;
+}
+
+.entries-main-container img {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.entries-main-container span {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.entries-main-container a {
+  display: block; 
+  color: #1e90ff; 
+  text-decoration: none;
+  font-size: 1em;
+  margin-top: 5px;
+}
+
+.entries-main-container a:hover {
+  text-decoration: underline;
+  color: #00bfff; 
+}
+
+.entries-main-container p {
+  margin-top: 10px;
+  line-height: 1.6;
+  color: #e0e0e0;
 }

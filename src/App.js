@@ -5,6 +5,7 @@ import Home from './components/HomePage';
 import VideoList from './components/VideoList';
 import Footer from './components/Footer';
 import Details from './components/Details';
+import Articles from './components/Articles';
 
 const App = () => {
   const videos = [
@@ -35,6 +36,7 @@ const App = () => {
             <Route path="/" element={<Home />} />
             <Route path="/videos" element={<VideoList videos={videos} />} />
             <Route path="/details" element={<Details />} />
+            <Route path="/articles" element={<Articles />} />
           </Routes>
         </main>
         <Footer />

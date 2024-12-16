@@ -12,6 +12,7 @@ const Header = () => {
           <li><Link to="/">Home</Link></li>
           <li><Link to="/videos">Videos</Link></li>
           <li><Link to="/details">Details</Link></li>
+          <li><Link to="/articles">Articles</Link></li>
         </ul>
       </nav>
     </header>
