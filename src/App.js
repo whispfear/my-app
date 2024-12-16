@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Home from './components/HomePage';
 import VideoList from './components/VideoList';
 import Footer from './components/Footer';
+import Details from './components/Details';
 
 const App = () => {
   const videos = [
@@ -33,6 +34,7 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/videos" element={<VideoList videos={videos} />} />
+            <Route path="/details" element={<Details />} />
           </Routes>
         </main>
         <Footer />

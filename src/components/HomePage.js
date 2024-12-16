@@ -1,6 +1,5 @@
 import React from 'react';
 import TestTable from './test_table';
-import TestPage from './test_page';
 
 const Home = () => (
   <section>
@@ -11,7 +10,6 @@ const Home = () => (
       <li>厚集もほきす読2抗設連びゅの増材</li>
     </ul>
     <TestTable />
-    <TestPage />
   </section>
 );
 
